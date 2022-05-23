@@ -1,0 +1,36 @@
+.card .front{
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
+  display: block;
+  position: absolute;
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+
+}
+.flipped .front{
+  transform: rotateY(0deg);
+  transition-delay:0.2s;
+}
+.back{
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
+  display: block;
+  background: navy;
+  transition: all ease-in 0.2s;
+  transition-delay:0.2s;
+}
+.flipped .back{
+  transform: rotateY(90deg);
+  transition-delay:0s;
+}
+.card-grid{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.card{
+  position: relative;
+}

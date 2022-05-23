@@ -1,0 +1,16 @@
+.ball-parent{
+  perspective: 1000px;
+}
+.ball{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: 1px solid black;
+  box-shadow: 1px 1px;
+  background: #F8E2AE;
+  opacity:0.8;
+  text-align: center;
+  display:table-cell;
+  vertical-align: middle;
+  font-size: 50px;
+}

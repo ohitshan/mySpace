@@ -1,0 +1,20 @@
+td{
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.mine label{
+  width: 70px;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.mine .ant-input{
+  width: 100px;
+}
+
+.mine .ant-typography{
+  margin:10px 10px;
+}
