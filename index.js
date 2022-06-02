@@ -3,7 +3,6 @@ const app = express();
 const config = require("./server/config/key");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -30,7 +29,7 @@ if (process.env.NODE_ENV === "production") {
 
   // index.html for all page routes
   app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "../client", "build", "index.html"));
+    res.sendFile(path.resolve(__dirname, "./client", "build", "index.html"));
   });
 }
 
