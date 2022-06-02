@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const config = require("./server/config/key");
+const config = require("./config/key");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 app.use(bodyParser.json());
@@ -13,13 +13,13 @@ mongoose
   .then(() => console.log("MONGODB CONNECTED!!"))
   .catch((err) => console.log(err));
 
-app.use("/api/users", require("./server/routes/users"));
-app.use("/api/products", require("./server/routes/products"));
-app.use("/api/videos", require("./server/routes/video"));
-app.use("/api/subscribe", require("./server/routes/subscribe"));
-app.use("/api/like", require("./server/routes/like"));
-app.use("/api/comment", require("./server/routes/comment"));
-app.use("/api/score", require("./server/routes/score"));
+app.use("/api/users", require("./routes/users"));
+app.use("/api/products", require("./routes/products"));
+app.use("/api/videos", require("./routes/video"));
+app.use("/api/subscribe", require("./routes/subscribe"));
+app.use("/api/like", require("./routes/like"));
+app.use("/api/comment", require("./routes/comment"));
+app.use("/api/score", require("./routes/score"));
 
 app.use("/uploads", express.static("uploads"));
 
